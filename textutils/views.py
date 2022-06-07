@@ -72,7 +72,8 @@ def analyze(request):
 
     
     if(removepunc != "on" and newlineremover!="on" and extraspaceremover!="on" and fullcaps!="on" and numberremover != "on"):
-        return HttpResponse("please select any operation and try again")
+        return render(request, 'analyze_if_not_selected.html')
+        
 
     return render(request, 'analyze.html', params)
 
