@@ -12,7 +12,16 @@ It is a simple django project or website in which we can Analyze text.
 4)Extra Spaces Remover<br>
 5)Numbers Remover
 
-# Check My Website demo video on youtube
+# Website overview
+
+![image](https://user-images.githubusercontent.com/95087498/174428531-55d89a83-b6da-4bc0-bb31-ef6a46571147.png)
+
+
+![image](https://user-images.githubusercontent.com/95087498/174428539-6870a200-4b8e-4897-8164-3cf427362029.png)
+
+
+
+# Check My Website demo video on YouTube
 
 [https://youtu.be/Z-xGuLk5E8w](https://www.youtube.com/watch?v=Z-xGuLk5E8w)
 
