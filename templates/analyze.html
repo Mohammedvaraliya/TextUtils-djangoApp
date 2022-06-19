@@ -25,14 +25,18 @@
 #corner-btn{
   position: absolute;
   right: 0;
-  top: 15px;
+  top: 6px;
+  margin-right: 4px;
   padding: 4px;
+}
+.break-text pre2 {
+  word-wrap: break-word;
 }
 </style>
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">TextUtils.in</a>
+  <a class="navbar-brand" href="/about">TextUtils.in</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -69,19 +73,21 @@
 
 <h1>Your Analyzed Text - {{ purpose }}</h1>
 
-<div style="position:relative;" class="bg-light">
+<div style="position:relative" class="bg-dark text-white">
+
 <p>
-    <button id="corner-btn" class="btn btn-outline-primary" onclick="copy()">
+    <button id="corner-btn" class="btn btn-dark" onclick="copy()">
         Copy
     </button>
-  <pre id="copy-text" class="p-4"><h2>{{ analyzed_text }}</h2></pre>
+  <pre2 id="copy-text" class="p-4"><h5> {{ analyzed_text }} </h5></pre2>
+  <pre2 id="copy-text" class="p-4"><h3> </h3></pre2>
 </p>
 </div>
 <input type="button" class="btn btn-primary btn-sm" value="Go back!" onclick="history.back()">
 </div>
 <footer class="footer">
   <div class="container">
-    <span class="text-light">&#169 2019 Textutils.in </span>
+    <span class="text-light">&#169 2022 Textutils.in </span>
   </div>
 </footer>
 
