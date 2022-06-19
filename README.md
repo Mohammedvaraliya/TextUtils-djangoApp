@@ -27,7 +27,7 @@ It is a simple django project or website in which we can Analyze text.
 
 # Check My Website demo video on YouTube
 
-[https://youtu.be/Z-xGuLk5E8w](https://www.youtube.com/watch?v=Z-xGuLk5E8w)
+https://www.youtube.com/watch?v=gtJisFVyO_U&t=80s
 
 <h1>Requirments</h1>
 python3<br>
