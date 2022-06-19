@@ -29,7 +29,13 @@
   margin-right: 4px;
   padding: 4px;
 }
-.break-text pre2 {
+
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
 </style>
@@ -79,8 +85,7 @@
     <button id="corner-btn" class="btn btn-dark" onclick="copy()">
         Copy
     </button>
-  <pre2 id="copy-text" class="p-4"><h5> {{ analyzed_text }} </h5></pre2>
-  <pre2 id="copy-text" class="p-4"><h3> </h3></pre2>
+  <pre id="copy-text" class="p-4 text-white"><h5> {{ analyzed_text }} </h5></pre>
 </p>
 </div>
 <input type="button" class="btn btn-primary btn-sm" value="Go back!" onclick="history.back()">
