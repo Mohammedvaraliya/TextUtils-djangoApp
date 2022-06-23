@@ -32,3 +32,7 @@ https://www.youtube.com/watch?v=gtJisFVyO_U&t=80s
 <h1>Requirments</h1>
 python3<br>
 django<br>
+
+# Thank you!
+
+I really appreciate all kinds of feedback and contributions. Please feel free to contribute in this project to learn or improve this.
