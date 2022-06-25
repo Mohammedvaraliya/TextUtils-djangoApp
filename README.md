@@ -33,7 +33,7 @@ https://textutilssystem.herokuapp.com/
 
 https://www.youtube.com/watch?v=gtJisFVyO_U&t=80s
 
-<h1>Requirments</h1>
+<h1>Requirements</h1>
 python3<br>
 django<br>
 
