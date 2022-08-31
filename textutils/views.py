@@ -21,6 +21,7 @@ def analyze(request):
         # Check checkbox values
         removepunc = request.POST.get('removepunc', 'off')
         fullcaps = request.POST.get('fullcaps', 'off')
+        lowercase = request.POST.get('lowercase', 'off')
         newlineremover = request.POST.get('newlineremover', 'off')
         extraspaceremover = request.POST.get('extraspaceremover', 'off')
         numberremover = request.POST.get('numberremover','off')
@@ -42,6 +43,14 @@ def analyze(request):
                 analyzed = analyzed + char.upper()
 
             params = {'purpose': 'Changed to Uppercase', 'analyzed_text': analyzed}
+            djtext = analyzed
+
+        if(lowercase=="on"):
+            analyzed = ""
+            for char in djtext:
+                analyzed = analyzed + char.lower()
+
+            params = {'purpose': 'Changed to Lowercase', 'analyzed_text': analyzed}
             djtext = analyzed
 
         if(extraspaceremover=="on"):
@@ -79,7 +88,7 @@ def analyze(request):
             djtext = analyzed
 
         
-        if(removepunc != "on" and newlineremover!="on" and extraspaceremover!="on" and fullcaps!="on" and numberremover != "on"):
+        if(removepunc != "on" and newlineremover!="on" and extraspaceremover!="on" and fullcaps!="on" and  lowercase!="on" and numberremover != "on"):
             return render(request, 'analyze_if_not_selected.html')
         
 
